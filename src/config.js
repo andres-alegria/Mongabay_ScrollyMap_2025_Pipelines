@@ -1,25 +1,25 @@
 const { REACT_APP_MAPBOX_ACCESS_TOKEN } = process.env;
 
 export default {
-  style: 'mapbox://styles/mongabay/cmdyt9fxl005a01qzb0d4das5',
+  style: 'mapbox://styles/mongabay/cmemu5xlk000o01r641mc0xbx',
   accessToken: REACT_APP_MAPBOX_ACCESS_TOKEN,
   showMarkers: false,
   theme: 'mongabay',
   intro: {
-    title: 'M-Sand',
+    title: 'Through the Safety Net',
     subtitle:
-      'When one ban triggers another crisis: how Kerala’s river sand mining ban is leading to more quarrying in the Western Ghats.',
+      'Oil pipeline expansion is putting the planet’s last biodiversity strongholds—and many Indigenous lands—at risk.',
     date: 'Sept. 05 2025',
     social: [
       {
         name: 'twitter',
         src: 'twitter.svg',
-        href: 'https://x.com/MongabayIndia',
+        href: 'https://x.com/Mongabay',
       },
       {
         name: 'facebook',
         src: 'facebook.svg',
-        href: 'https://www.facebook.com/MongabayIndia/',
+        href: 'https://www.facebook.com/Mongabay/',
       },
     ],
   },
@@ -28,7 +28,7 @@ export default {
       name: 'mongabay',
       src: 'mongabaylogo.png',
       width: '140',
-      href: 'https://india.mongabay.com',
+      href: 'https://news.mongabay.com',
     },
     {
       name: 'vizzuality',
@@ -39,469 +39,702 @@ export default {
   ],
   alignment: 'left',
   footer: 'Cartography by Andrés Alegría for Mongabay.',
+  
+  
+  
   chapters: [
     {
+     
+     
       id: 'first chapter',
       alignment: 'left',
       hidden: false,
-      title: 'Placeholder text',
+      title: 'Global network of gas and oil infrastructure',
       description:
-        'Placeholder text.',
+        'Gas and oil pipeline routes, including proposed projects and existing infrastructure.',
       legend: [
         {
-          title: 'Placeholder text',
-          icon: 'plane',
+          title: 'Gas/Oil Pipelines',
+          icon: 'pipeline',
         },
       ],
       sources:
-        "Placeholder text.",
+        "Global Energy Monitor (GEM 2025)",
       location: {
-        center: [77.20, 10.75],
-        zoom: 6.5,
-        pitch: 30.0,
-        bearing: 60,
+        center: [0, 0],
+        zoom: 1.25,
+        pitch: 0,
+        bearing: 0,
       },
       mapAnimation: 'flyTo',
       rotateAnimation: false,
       callback: '',
       onChapterEnter: [
-        {
-          layer: 'peruvian-amazon-20241002t1750-dlalbv copy',
-          opacity: 0.5,
-        },
-        {
-          layer: 'airstrips-10224-dozgmq',
+                {
+          layer: 'Pipelines-Mayor',
           opacity: 1,
         },
         {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 2',
-          opacity: 0,
-        },
-        {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 1',
-          opacity: 0,
-        },
-        {
-          layer: 'coca-crops-density-20241002t1-55l40t',
-          opacity: 0,
+          layer: 'Pipelines-All',
+          opacity: 1,
         },
       ],
       onChapterExit: [
+           {
+          layer: 'Pipelines-Mayor',
+          opacity: 1,
+        },
         {
-          layer: 'peruvian-amazon-20241002t1750-dlalbv copy',
-          opacity: 0,
+          layer: 'Pipelines-All',
+          opacity: 1,
         },
       ],
     },
     {
+     
+     
       id: 'second-chapter',
       alignment: 'right',
       hidden: false,
-      title: 'Placeholder text',
+      title: 'Mayor oil pipelines under consideration',
       images: [
         {
           src: 'Photo1.jpg',
           position: 'top',
-          title: 'Placeholder text',
-          author: 'Placeholder text',
+          title: 'Geesthacht, Germany',
+          author: 'Photo by w. Weiser on Unsplash',
         },
       ],
       description:
-        'Placeholder text.',
+        "Selected routes of some of the longest oil pipeline projects in development across the world.",
       legend: [
         {
-          title: 'Placeholder text',
-          icon: 'coca',
+          title: 'Gas/Oil Pipelines',
+          icon: 'pipeline',
         },
       ],
-      sources: "Placeholder text",
+      sources: "Global Energy Monitor (GEM 2025)",
       location: {
-        center: [77.20, 10.75],
-        zoom: 6.5,
-        pitch: 40.0,
-        bearing: 60,
+        center: [0, 0],
+        zoom: 2.0,
+        pitch: 0,
+        bearing: 0,
       },
       mapAnimation: 'flyTo',
       rotateAnimation: false,
       callback: '',
       onChapterEnter: [
         {
-          layer: 'coca-crops-density-20241002t1-55l40t',
+          layer: 'Pipelines-Mayor',
           opacity: 1,
         },
         {
-          layer: 'airstrips-10224-dozgmq',
-          opacity: 1,
-        },
-        {
-          layer: 'territorios-indigenas-0lu5ni copy',
+          layer: 'Pipelines-All',
           opacity: 0,
         },
       ],
       onChapterExit: [
-        {
-          layer: 'coca-crops-density-20241002t1-55l40t',
-          opacity: 0,
-        },
       ],
     },
     {
+     
+     
       id: 'third-chapter',
-      alignment: 'fully',
+      alignment: 'right',
       hidden: false,
-      title: 'Placeholder text',
+      title: 'Araucária-Cuiabá Oil Pipeline',
       description:
-          'Placeholder text.',
+          "Also known by its initials OLAC, this 1568 km pipeline was proposed in Brazil's 2021-2022 Indicative Oil Pipelines Plan as a means to transport oil from the coastal region of Paraná state to the states of Mato Grosso and Mato Grosso do Sul in Brazil's Central West region. The pipeline would be divided into five sections as outlined above, and would have an estimated cost of R$ 12,209 million (12.2 billion Brazilian reais).",
       legend: [
         {
-          title: 'Placeholder text',
-          color: '#de6363',
+          title: 'Gas/Oil Pipelines',
+          icon: 'pipeline',
+        },
+        {
+          title: 'Global Safety Net',
+          color: '#006a54',
           pattern: 'LINEPATTERN',
         },
       ],
       sources: 'Placeholder text',
       location: {
-        center: [77.20, 10.75],
-        zoom: 6.5,
-        pitch: 20.0,
-        bearing: 60,
+        center: [-48.25,-21.45],
+        zoom: 4.25,
+        pitch: 0.0,
+        bearing: 0,
       },
       mapAnimation: 'flyTo',
       rotateAnimation: false,
       callback: '',
       onChapterEnter: [
         {
-          layer: 'territorios-indigenas-0lu5ni copy',
-          opacity: 1,
+          layer: 'GSN-climate-stabilization_color',
+           opacity: 0,
         },
         {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 2',
+           layer: 'GSN-potential-corridors_color',
+            opacity: 0,
+        },
+        {
+          layer: 'WDPA-SA_color',
           opacity: 0,
         },
         {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 1',
+          layer: 'GSN-intact-wilderness-areas_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-high-biodiversity_color',
+         opacity: 0,
+        },
+        {
+          layer: 'GSN-large-mammals_color',
           opacity: 0,
         },
       ],
       onChapterExit: [
         {
-          layer: 'territorios-indigenas-0lu5ni copy',
-          opacity: 0.75,
+          layer: 'GSN-climate-stabilization_color',
+           opacity: 0,
+        },
+        {
+           layer: 'GSN-potential-corridors_color',
+            opacity: 0,
+        },
+        {
+          layer: 'WDPA-SA_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-intact-wilderness-areas_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-high-biodiversity_color',
+         opacity: 0,
+        },
+        {
+          layer: 'GSN-large-mammals_color',
+          opacity: 0,
         },
       ],
     },
     {
+     
+     
       id: 'fourth-chapter',
-      alignment: 'fully',
+      alignment: 'right',
       hidden: false,
-      title: 'Placeholder text',
-      images: [
-        {
-          src: 'Photo1.jpg',
-          position: 'top',
-          title: 'Placeholder text',
-          author: 'Placeholder text',
-        },
-      ],
+      title: 'Where pipelines meet critical ecosystems',
       description:
-        'Placeholder text.',
+        'Overlaying oil infrastructure with critical habitats and Indigenous homelands reveals risks of cascading fragmentation.',
       legend: [
         {
-          title: 'Placeholder text',
-          color: '#ccefb8',
+          title: 'Gas/Oil Pipelines',
+          icon: 'pipeline',
+        },
+        {
+          title: 'Indigenous Territories',
+          color: '#fbe75f',
+          pattern: 'LINEPATTERN',
+        },
+        {
+          title: 'Global Safety Net',
+          color: '#006a54',
+          pattern: 'LINEPATTERN',
         },
       ],
       sources: 'Placeholder text',
       location: {
-        center: [77.20, 10.75],
-        zoom: 7.5,
-        pitch: 30.0,
-        bearing: 60,
+        center: [-47.0, -19],
+        zoom: 5.25,
+        pitch: 50.0,
+        bearing: -40,
       },
       mapAnimation: 'flyTo',
       rotateAnimation: false,
       callback: '',
       onChapterEnter: [
         {
-          layer: 'deforestationthreeregions-dcthbg',
-          opacity: 1,
+          layer: 'GSN-climate-stabilization_color',
+           opacity: 0,
         },
         {
-          layer: 'coca-crops-density-20241002t1-55l40t',
-          opacity: 0.5,
-        },
-      ],
-      onChapterExit: [],
-    },
-    {
-      id: 'fifth-chapter',
-      alignment: 'fully',
-      hidden: false,
-      title: 'Placeholder text',
-      description:
-        'Placeholder text.',
-      location: {
-        center: [77.20, 10.75],
-        zoom: 6.5,
-        pitch: 60.0,
-        bearing: 50,
-      },
-      mapAnimation: 'flyTo',
-      rotateAnimation: false,
-      callback: '',
-      onChapterEnter: [
-        {
-          layer: 'deforestationthreeregions-dcthbg',
-          opacity: 1,
+           layer: 'GSN-potential-corridors_color',
+            opacity: 0,
         },
         {
-          layer: 'coca-crops-density-20241002t1-55l40t',
-          opacity: .5,
+          layer: 'WDPA-SA_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-intact-wilderness-areas_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-high-biodiversity_color',
+         opacity: 0,
+        },
+        {
+          layer: 'GSN-large-mammals_color',
+          opacity: 0,
         },
       ],
       onChapterExit: [
         {
-          layer: 'coca-crops-density-20241002t1-55l40t',
+          layer: 'GSN-climate-stabilization_color',
+           opacity: 0,
+        },
+        {
+           layer: 'GSN-potential-corridors_color',
+            opacity: 0,
+        },
+        {
+          layer: 'WDPA-SA_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-intact-wilderness-areas_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-high-biodiversity_color',
+         opacity: 0,
+        },
+        {
+          layer: 'GSN-large-mammals_color',
           opacity: 0,
         },
       ],
     },
     {
-      id: 'sixth-chapter',
-      alignment: 'left',
-      hidden: false,
-      title: 'Placeholder text',
-      images: [
-        {
-          src: 'Photo1.jpg',
-          position: 'top',
-          title: 'Placeholder text',
-          author: 'Placeholder text',
-        },
-      ],
-      description:
-        'Placeholder text.',
-      location: {
-        center: [77.20, 10.75],
-        zoom: 6.5,
-        pitch: 30.0,
-        bearing: 50,
-      },
-      mapAnimation: 'flyTo',
-      rotateAnimation: false,
-      callback: '',
-      onChapterEnter: [
-        {
-          layer: 'deforestationthreeregions-dcthbg',
-          opacity: 1,
-        },
-        {
-          layer: 'territorios-indigenas-0lu5ni copy',
-          opacity: 1,
-        },
-      ],
-      onChapterExit: [],
-    },
-    {
-      id: 'seventh-chapter',
+   id: 'fith-chapter',
       alignment: 'right',
       hidden: false,
-      title: 'Placeholder text',
-      images: [
-        {
-          src: 'Photo1.jpg',
-          position: 'top',
-          title: 'APlaceholder text',
-          author: 'Placeholder text',
-        },
-      ],
+      title: '1/6 Network of Protected Areas',
       description:
-        'Placeholder text.',
+        'Placeholder description of this layer.',
+      sources: 'Protected Planet/WDPA (2025)',
       location: {
-        center: [77.20, 10.75],
-        zoom: 4.5,
-        pitch: 30.0,
-        bearing: 60,
+        center: [-50.1,-24.6],
+        zoom: 8,
+        pitch: 50,
+        bearing: -20,
       },
       mapAnimation: 'flyTo',
       rotateAnimation: false,
       callback: '',
       onChapterEnter: [
         {
-          layer: 'deforestationthreeregions-dcthbg',
+          layer: 'GSN-climate-stabilization_color',
+           opacity: 0,
+        },
+        {
+           layer: 'GSN-potential-corridors_color',
+            opacity: 0,
+        },
+        {
+          layer: 'WDPA-SA_color',
           opacity: 1,
         },
         {
-          layer: 'territorios-indigenas-0lu5ni copy',
-          opacity: 1,
-        },
-        {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 2',
+          layer: 'GSN-intact-wilderness-areas_color',
           opacity: 0,
-        }
+        },
+        {
+          layer: 'GSN-high-biodiversity_color',
+         opacity: 0,
+        },
+        {
+          layer: 'GSN-large-mammals_color',
+          opacity: 0,
+        },
       ],
       onChapterExit: [
         {
-          layer: 'territorios-indigenas-0lu5ni copy',
+          layer: 'GSN-climate-stabilization_color',
+           opacity: 0,
+        },
+        {
+           layer: 'GSN-potential-corridors_color',
+            opacity: 0,
+        },
+        {
+          layer: 'WDPA-SA_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-intact-wilderness-areas_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-high-biodiversity_color',
+         opacity: 0,
+        },
+        {
+          layer: 'GSN-large-mammals_color',
           opacity: 0,
         },
       ],
     },
-    {
-      id: 'eighth-chapter',
-      alignment: 'fully',
-      hidden: false,
-      title: 'Placeholder text',
-      images: [
-        {
-          src: 'Photo1.jpg',
-          position: 'top',
-          title: 'Placeholder text',
-          author: 'Placeholder text',
-        },
-      ],
-      description:
-        'Placeholder text.',
-      legend: [
-        {
-          title: 'Placeholder text',
-          color: '#66f7ff',
-        },
-      ],
-      sources: "Placeholder text",
-      location: {
-        center: [77.20, 10.75],
-        zoom: 4.5,
-        pitch: 60.0,
-        bearing: 30,
-      },
-      mapAnimation: 'flyTo',
-      rotateAnimation: false,
-      callback: '',
-      onChapterEnter: [
-        {
-          layer: 'deforestationthreeregions-dcthbg',
-          opacity: 0,
-        },
-        {
-          layer: 'coca-crops-density-20241002t1-55l40t',
-          opacity: 0,
-        },
-        {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 2',
-          opacity: 0.75,
-        },
-        {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 1',
-          opacity: 0.75,
-        },
-        {
-          layer: 'territorios-indigenas-0lu5ni copy',
-          opacity: 0,
-        },
-      ],
-      onChapterExit: [],
-    },
-    {
-      id: 'ninth-chapter',
+     {
+   id: 'sixth-chapter',
       alignment: 'right',
       hidden: false,
-      title: 'Placeholder text',
-      images: [
-        {
-          src: 'Photo1.jpg',
-          position: 'top',
-          title: 'Placeholder text',
-          author: 'Placeholder text',
-        },
-      ],
+      title: '2/6 Potential Wildlife Corridors',
       description:
-        'Placeholder text.',
+        'Placeholder description of this layer.',
+      sources: 'Protected Planet/WDPA (2025)',
       location: {
-        center: [77.20, 10.75],
-        zoom: 5.5,
-        pitch: 20.0,
-        bearing: 40,
+        center: [-50.1,-24.6],
+        zoom: 8,
+        pitch: 50,
+        bearing: -20,
       },
       mapAnimation: 'flyTo',
       rotateAnimation: false,
       callback: '',
       onChapterEnter: [
         {
-          layer: 'deforestationthreeregions-dcthbg',
+          layer: 'GSN-climate-stabilization_color',
+           opacity: 0,
+        },
+        {
+           layer: 'GSN-potential-corridors_color',
+            opacity: 1,
+        },
+        {
+          layer: 'WDPA-SA_color',
           opacity: 0,
         },
         {
-          layer: 'coca-crops-density-20241002t1-55l40t',
-          opacity: 0.75,
+          layer: 'GSN-intact-wilderness-areas_color',
+          opacity: 0,
         },
         {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 2',
-          opacity: 0.75,
+          layer: 'GSN-high-biodiversity_color',
+         opacity: 0,
         },
         {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 1',
-          opacity: 0.75,
-        },
-        {
-          layer: 'territorios-indigenas-0lu5ni copy',
+          layer: 'GSN-large-mammals_color',
           opacity: 0,
         },
       ],
-      onChapterExit: [],
+      onChapterExit: [
+        {
+          layer: 'GSN-climate-stabilization_color',
+           opacity: 0,
+        },
+        {
+           layer: 'GSN-potential-corridors_color',
+            opacity: 0,
+        },
+        {
+          layer: 'WDPA-SA_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-intact-wilderness-areas_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-high-biodiversity_color',
+         opacity: 0,
+        },
+        {
+          layer: 'GSN-large-mammals_color',
+          opacity: 0,
+        },
+      ],
     },
-    {
-      id: 'tenth-identifier',
-      alignment: 'fully',
+    
+       {
+   id: 'seventh-chapter',
+      alignment: 'right',
       hidden: false,
-      title: 'Rivers and roads',
-      images: [
-        {
-          src: 'Photo1.jpg',
-          position: 'top',
-          title: 'Placeholder text',
-          author: 'Placeholder text',
-        },
-      ],
+      title: '3/6 Intact Wilderness Areas',
       description:
-        'Placeholder text.',
+        'Placeholder description of this layer.',
+      sources: 'Protected Planet/WDPA (2025)',
       location: {
-        center: [77.20, 10.15],
-        zoom: 6.5,
-        pitch: 20.0,
-        bearing: 30,
+        center: [-50.1,-24.6],
+        zoom: 8,
+        pitch: 50,
+        bearing: -20,
       },
       mapAnimation: 'flyTo',
       rotateAnimation: false,
       callback: '',
       onChapterEnter: [
         {
-          layer: 'coca-crops-density-20241002t1-55l40t',
+          layer: 'GSN-climate-stabilization_color',
+           opacity: 0,
+        },
+        {
+           layer: 'GSN-potential-corridors_color',
+            opacity: 0,
+        },
+        {
+          layer: 'WDPA-SA_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-intact-wilderness-areas_color',
           opacity: 1,
         },
         {
-          layer: 'airstrips-10224-dozgmq',
-          opacity: 1,
+          layer: 'GSN-high-biodiversity_color',
+         opacity: 0,
         },
         {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 2',
-          opacity: 0.75,
+          layer: 'GSN-large-mammals_color',
+          opacity: 0,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: 'GSN-climate-stabilization_color',
+           opacity: 0,
         },
         {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 1',
-          opacity: 0.75,
+           layer: 'GSN-potential-corridors_color',
+            opacity: 0,
         },
         {
-          layer: 'territorios-indigenas-0lu5ni copy',
+          layer: 'WDPA-SA_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-intact-wilderness-areas_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-high-biodiversity_color',
+         opacity: 0,
+        },
+        {
+          layer: 'GSN-large-mammals_color',
+          opacity: 0,
+        },
+      ],
+    },
+    
+    
+       {
+   id: 'eigthth-chapter',
+      alignment: 'right',
+      hidden: false,
+      title: '4/6 High Biodiversity Areas',
+      description:
+        'Placeholder description of this layer.',
+      sources: 'Protected Planet/WDPA (2025)',
+      location: {
+        center: [-50.1,-24.6],
+        zoom: 8,
+        pitch: 50,
+        bearing: -20,
+      },
+      mapAnimation: 'flyTo',
+      rotateAnimation: false,
+      callback: '',
+      onChapterEnter: [
+        {
+          layer: 'GSN-climate-stabilization_color',
+           opacity: 0,
+        },
+        {
+           layer: 'GSN-potential-corridors_color',
+            opacity: 0,
+        },
+        {
+          layer: 'WDPA-SA_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-intact-wilderness-areas_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-high-biodiversity_color',
+         opacity: 1,
+        },
+        {
+          layer: 'GSN-large-mammals_color',
+          opacity: 0,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: 'GSN-climate-stabilization_color',
+           opacity: 0,
+        },
+        {
+           layer: 'GSN-potential-corridors_color',
+            opacity: 0,
+        },
+        {
+          layer: 'WDPA-SA_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-intact-wilderness-areas_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-high-biodiversity_color',
+         opacity: 0,
+        },
+        {
+          layer: 'GSN-large-mammals_color',
+          opacity: 0,
+        },
+      ],
+    },
+    
+    
+       {
+   id: 'ninth-chapter',
+      alignment: 'right',
+      hidden: false,
+      title: '5/6 Large Mammal Landscapes',
+      description:
+        'Placeholder description of this layer.',
+      sources: 'Protected Planet/WDPA (2025)',
+      location: {
+        center: [-50.1,-24.6],
+        zoom: 8,
+        pitch: 50,
+        bearing: -20,
+      },
+      mapAnimation: 'flyTo',
+      rotateAnimation: false,
+      callback: '',
+      onChapterEnter: [
+        {
+          layer: 'GSN-climate-stabilization_color',
+           opacity: 0,
+        },
+        {
+           layer: 'GSN-potential-corridors_color',
+            opacity: 0,
+        },
+        {
+          layer: 'WDPA-SA_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-intact-wilderness-areas_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-high-biodiversity_color',
+         opacity: 0,
+        },
+        {
+          layer: 'GSN-large-mammals_color',
           opacity: 1,
         },
       ],
       onChapterExit: [
         {
-          layer: 'coca-crops-density-20241002t1-55l40t',
+          layer: 'GSN-climate-stabilization_color',
+           opacity: 0,
+        },
+        {
+           layer: 'GSN-potential-corridors_color',
+            opacity: 0,
+        },
+        {
+          layer: 'WDPA-SA_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-intact-wilderness-areas_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-high-biodiversity_color',
+         opacity: 0,
+        },
+        {
+          layer: 'GSN-large-mammals_color',
           opacity: 0,
         },
       ],
     },
+    
+    
+       {
+   id: 'tenth-chapter',
+      alignment: 'right',
+      hidden: false,
+      title: '6/6 Climate-Stabilization Areas',
+      description:
+        'Placeholder description of this layer.',
+      sources: 'Protected Planet/WDPA (2025)',
+      location: {
+        center: [-50.1,-24.6],
+        zoom: 8,
+        pitch: 50,
+        bearing: -20,
+      },
+      mapAnimation: 'flyTo',
+      rotateAnimation: false,
+      callback: '',
+      onChapterEnter: [
+        {
+          layer: 'GSN-climate-stabilization_color',
+           opacity: 1,
+        },
+        {
+           layer: 'GSN-potential-corridors_color',
+            opacity: 0,
+        },
+        {
+          layer: 'WDPA-SA_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-intact-wilderness-areas_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-high-biodiversity_color',
+         opacity: 0,
+        },
+        {
+          layer: 'GSN-large-mammals_color',
+          opacity: 0,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: 'GSN-climate-stabilization_color',
+           opacity: 0,
+        },
+        {
+           layer: 'GSN-potential-corridors_color',
+            opacity: 0,
+        },
+        {
+          layer: 'WDPA-SA_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-intact-wilderness-areas_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-high-biodiversity_color',
+         opacity: 0,
+        },
+        {
+          layer: 'GSN-large-mammals_color',
+          opacity: 0,
+        },
+      ],
+    },
+    
+
   ],
 };
