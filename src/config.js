@@ -735,6 +735,77 @@ export default {
       ],
     },
     
+    
+      {
+   id: 'eleventh-chapter',
+      alignment: 'right',
+      hidden: false,
+      title: 'Example of focus area',
+      description:
+        'Placeholder description of this layer.',
+      sources: 'Source xy',
+      location: {
+        center: [-49.680,-25.515],
+        zoom: 10.5,
+        pitch: 0,
+        bearing: 0,
+      },
+      mapAnimation: 'flyTo',
+      rotateAnimation: false,
+      callback: '',
+      onChapterEnter: [
+        {
+          layer: 'GSN-climate-stabilization_color',
+           opacity: 0,
+        },
+        {
+           layer: 'GSN-potential-corridors_color',
+            opacity: 0,
+        },
+        {
+          layer: 'WDPA-SA_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-intact-wilderness-areas_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-high-biodiversity_color',
+         opacity: 0,
+        },
+        {
+          layer: 'GSN-large-mammals_color',
+          opacity: 0,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: 'GSN-climate-stabilization_color',
+           opacity: 0,
+        },
+        {
+           layer: 'GSN-potential-corridors_color',
+            opacity: 0,
+        },
+        {
+          layer: 'WDPA-SA_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-intact-wilderness-areas_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-high-biodiversity_color',
+         opacity: 0,
+        },
+        {
+          layer: 'GSN-large-mammals_color',
+          opacity: 0,
+        },
+      ],
+    },
 
   ],
 };
