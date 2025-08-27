@@ -144,7 +144,7 @@ export default {
       hidden: false,
       title: 'Araucária-Cuiabá Oil Pipeline',
       description:
-          "Also known by its initials OLAC, this 1568 km pipeline was proposed in Brazil's 2021-2022 Indicative Oil Pipelines Plan as a means to transport oil from the coastal region of Paraná state to the states of Mato Grosso and Mato Grosso do Sul in Brazil's Central West region. The pipeline would be divided into five sections as outlined above, and would have an estimated cost of R$ 12,209 million (12.2 billion Brazilian reais).",
+          "Also known by its initials OLAC, this 1568 km pipeline was proposed in Brazil's 2021-2022 Indicative Oil Pipelines Plan as a means to transport oil from the coastal region of Paraná state to the states of Mato Grosso and Mato Grosso do Sul in Brazil's Central West region. The pipeline would have an estimated cost of 2.25 billion USD (12.2 billion Brazilian reais).",
       legend: [
         {
           title: 'Gas/Oil Pipelines',
