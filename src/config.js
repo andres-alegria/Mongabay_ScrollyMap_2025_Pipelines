@@ -9,7 +9,7 @@ export default {
     title: 'Through the Safety Net',
     subtitle:
       'Oil pipeline expansion is putting the planet’s last biodiversity strongholds—and many Indigenous lands—at risk.',
-    date: 'Draft August 2025',
+    date: 'Draft',
     social: [
       {
         name: 'twitter',
